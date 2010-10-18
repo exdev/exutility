@@ -1,0 +1,8 @@
+write CONFIG, source code = *.h, .........
+
+write .\iconv.cp932_to_euc-jp.sh
+write .\iconv.latin1_to_cp936.sh
+write .\iconv.latin1_to_utf-8.sh
+write .\svn.db_to_fsfs.sh
+write .\svn.unbinder.sh
+
