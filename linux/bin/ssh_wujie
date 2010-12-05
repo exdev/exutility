@@ -1,1 +1,3 @@
+#!/bin/bash
+
 ssh wujie@10.0.0.2

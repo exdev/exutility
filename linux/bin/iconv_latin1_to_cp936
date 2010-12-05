@@ -1,9 +1,11 @@
+#!/bin/bash
+
 @echo off
 
 rem  ======================================================================================
-rem  File         : iconv_cp932-to-EUC_JP.bat
+rem  File         : iconv_latin1-to-cp936.bat
 rem  Author       : Wu Jie 
-rem  Last Change  : 10/19/2008 | 15:27:03 PM | Sunday,October
+rem  Last Change  : 10/19/2008 | 15:27:09 PM | Sunday,October
 rem  Description  : 
 rem  ======================================================================================
 
@@ -11,9 +13,9 @@ rem  ------------------------------------------------------------------
 rem  Desc: 
 rem  ------------------------------------------------------------------ 
 
-for /R %1 %%i in (*.log *.cue *.txt) do ( 
+for /R %1 %%i in (*.c *.cpp *.cxx *.c++ *.C *.h *.H *.hh *.hxx *.hpp *.inl *.uc *.hlsl *.vsh *.psh *.fx *.fxh *.cg *.shd *.txt) do ( 
         echo Converting %%i... 
-        iconv -c -f cp932 -t EUC-JP "%%i" > "%%i.cov"
+        iconv -c -f latin1 -t cp936 "%%i" > "%%i.cov"
         move "%%i.cov" "%%i" )
 goto Finish
 

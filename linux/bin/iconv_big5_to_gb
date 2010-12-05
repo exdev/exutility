@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in *.srt ; do
+    echo Converting "$file"... 
+    iconv -c -f BIG5 -t GB18030 "$file" > "$file.cov"
+done

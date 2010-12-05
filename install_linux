@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cd ~/exdev/exutility
+cwd=`pwd` 
+
+# linux/bin commands
+linux_cmd=( 
+git_sync_exdev 
+git_check_exdev
+lftp_wujie 
+ssh_exdev 
+ssh_wujie 
+sync_exvim 
+)
+
+# install linux/bin commands
+for ((i=0; i<${#linux_cmd[*]};i++))
+do
+    cmd=${linux_cmd[$i]}
+    echo install command: $cmd
+    rm ~/bin/$cmd
+    ln -s $cwd/linux/bin/$cmd ~/bin/$cmd
+    chmod 751 $cwd/linux/bin/$cmd
+done
+
+# TODO { 
+# cp -r ./all/bin/git_output_merge_commands /usr/bin/
+# } TODO end 
+
