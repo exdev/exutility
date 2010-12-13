@@ -32,6 +32,12 @@ git status
 cd ..
 echo done
 
+echo syncing exunity3d...
+cd exunity3d
+git status
+cd ..
+echo done
+
 echo syncing exutility...
 cd exutility
 git status

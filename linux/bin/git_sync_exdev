@@ -32,6 +32,12 @@ git pull
 cd ..
 echo done
 
+echo syncing exunity3d...
+cd exunity3d
+git pull
+cd ..
+echo done
+
 echo syncing exutility...
 cd exutility
 git pull
