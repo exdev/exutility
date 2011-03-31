@@ -43,3 +43,9 @@ cd exutility
 git pull
 cd ..
 echo done
+
+echo syncing exdev_site...
+cd exdev_site
+git pull
+cd ..
+echo done

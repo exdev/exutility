@@ -43,3 +43,9 @@ cd exutility
 git status
 cd ..
 echo done
+
+echo syncing exdev_site...
+cd exdev_site
+git status
+cd ..
+echo done
