@@ -49,3 +49,9 @@ cd exdev_site
 git pull
 cd ..
 echo done
+
+echo syncing MediaWiki_skin_exdev...
+cd MediaWiki_skin_exdev
+git pull
+cd ..
+echo done
