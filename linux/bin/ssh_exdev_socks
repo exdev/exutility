@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh exdev@exdev.webfactional.com -D 1080
