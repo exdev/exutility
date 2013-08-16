@@ -27,3 +27,5 @@ done
 # cp -r ./all/bin/git_output_merge_commands /usr/bin/
 # } TODO end 
 
+# Add the following command in your ~/.bash_profile file. 
+# export PATH=$PATH:~/bin/ 
